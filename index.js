@@ -1,38 +1,95 @@
-const txtOp1 = document.getElementById("Op1")
-const txtOperacion = document.getElementById("Operacion")
-const txtOp2 = document.getElementById("Op2")
-const btnCalcular= document.getElementById("calcular")
-const pResultado = document.getElementById("Resultado")
+//Esto es solo un comentario
+//console.log("hola Champ");
 
-btnCalcular.addEventListener("click" , calcular)
+var miVariable = 24;
+// console.log("mi edad es " + miVariable);
 
-function calcular(){
-    const operacion = txtOperacion.value
-     const op1 = parseFloat (txtOp1.value)
-     const op2 = parseFloat (txtOp2.value)
+miVariable = 12;
+// console.log("mi edad ahora es " + miVariable);
 
-   if(operacion == "+" || operacion == "-"  || operacion == "*" || operacion =="/" || !isNaN(op1)  && !isNaN(op2))
-    {  
-         let resultado;
-        switch(operacion){
-            case "+" :
-            resultado = op1 + op2
-            break;
-            case "-" :
-            resultado = op1 - op2
-            break;
-            case "*":
-                resultado = op1 * op2
-                break;
-            case "/":
-                resultado = op1/op2
-                break
-       }
-    
-       pResultado.innerText = "= " + resultado
-    }else{
-        pResultado.innerText = "calculo imposible"
-    }
+const miConstante = 3; 
+// console.log("el valor de mi constante es " + miConstante);
+
+//var op1 = 2
+//var op2 = 3
+//var resultado = op1 + op2;
+//console.log("el resultado vale:" + resultado);
+
+// CONDICIONALES 
+
+let miNumero  = 6
+let miNombre = "Emilio";
+
+//let resultadoPregunta = miNumero == 7;
+//console.log(resultadoPregunta);
+
+
+// if(miNumero > 2 && miNombre == "Emilio" ){
+ //   console.log("Si.");
+ // }else {
+ //   console.log("No.");
+// }
+
+//let niNumero2  = 0 
+//if(miNumero2 > 0){
+//    console.log("mi numero es positivo");
+//}else if(miNumero2 === 0){
+//    console.log("mi numero es zero");
+//}else{
+//    console.log("Mi numero es Negativo ");
+//}
+
+//let contador  = 0
+//while(contandor < 5 ){
+//    console.log("Hola a todos")
+//      consoloe.log(contador);
+ //   contador = contandor + 1;
+//}
+
+//for (let i = 1000000; i >= 0; i-- ) {
+ //   console.log(i);
+//}
+
+
+function saludar(nombre, edad){
+    console.log("Hola mi nombre es: " + nombre);
+    console.log("y mi edad es: ") 
 }
 
-// Nunca COnfiar en el Usuario para hacer ciertas
+
+function multiplicar(num1, num2){
+    let resultado = num1 * num2;
+    return resultado;
+}
+
+//let recibidor = multiplicar(2,5);
+//console.log(recibidor);
+
+//ARREGLOS 
+let miArreglo = [ "David", "Fernando", "Kevin", "Karla"];
+for(let i = 0; i < 4; i++){
+    console.log("Accediendo al indice: "  + i);
+let mostrar = miArreglo[i];
+  console.log(mostrar);
+}
+
+//OBJETOS
+let miObjetivo = {
+    nombre : "david",
+    edad: 24, 
+    masculino : true
+};
+   console.log(persona);
+
+persona.nombre= "Nuevo Leon";
+console.log(persona);
+
+ //let persona2 = {
+ //   nombre: "kevin",
+  //  edad : 21, 
+  //  masculino: false,
+
+// };
+
+// Let arreglodeObjetos = [persona , persona2]
+
